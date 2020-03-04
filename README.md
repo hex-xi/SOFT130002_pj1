@@ -23,9 +23,10 @@ web课程pj1
 * bonus5.1更复杂的图⽚处理
     - 完成情况：暂无
     - 解决方法：
-暂无，利用'helloWorld()'函数...
+暂无，利用`helloWorld()`函数...
 代码示例：
-  （Tab）
+```javascript
+```
 
 * bonus5.2 响应式布局
     - 完成情况：暂无
