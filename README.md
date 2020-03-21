@@ -29,9 +29,17 @@ web课程pj1
 ```
 
 * bonus5.2 响应式布局
-    - 完成情况：暂无
+    - 完成情况：1/3
     - 解决方法：
-暂无
+导航栏用float安排布局，其他用居中处理。
+对于首页头图用有自适应窗口的div（class=“scale”）包围
+```css
+.scale img{
+    background-size: cover;
+    width:100%;
+    height: auto;
+}
+```
 
 * bonus5.3 界⾯美观
     - 完成情况：暂无
