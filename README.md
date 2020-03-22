@@ -21,7 +21,7 @@ web课程pj1
 ## Bonus的完成情况和解决⽅法
 * bonus5.1更复杂的图⽚处理
     - 完成情况：暂无
-    - 解决方法：
+    - 解决方法：  
 暂无，利用`helloWorld()`函数...
 代码示例：
 ```javascript
@@ -29,8 +29,8 @@ web课程pj1
 
 * bonus5.2 响应式布局
     - 完成情况：√ 
-    - 解决方法：
-①用float安排布局
+    - 解决方法：  
+①用float安排布局  
 ②对于图片，用css中background-size/object-fit中的cover或contain属性
 ```css
 .scale img{
@@ -42,8 +42,8 @@ web课程pj1
 
 * bonus5.3 界⾯美观
     - 完成情况：√
-    - 解决方法：
-①综合利用图标库，背景图片，透明度，box-shadow投影增加立体感等等...
+    - 解决方法：  
+①综合利用图标库，背景图片，透明度，box-shadow投影增加立体感等等...  
 ②我觉得还挺美观的o(*￣▽￣*)ブ
 
 
