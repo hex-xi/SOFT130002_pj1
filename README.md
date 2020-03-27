@@ -8,24 +8,22 @@ web课程pj1
 
 ## Github 地址和 Github Pages 地址
 * Github 地址:<https://github.com/hex-xi/SOFT130002_pj1>
-* Github Pages 地址:
+* Github Pages 地址:。。。
 
-## 项⽬完成情况（6/16）
+## 项⽬完成情况（8/16）
 > ~~阅读文档~~ √  
-> ~~安装编译器及环境~~  √ 
-> ⽹站具体需求（9个页面，html+css） 1/9 
-> Bonus（3个） 2/3 
+> ~~安装编译器及环境~~  √   
+> ⽹站具体需求（9个页面，html+css） 2/9   
+> Bonus（3个） 3/3   
 > 文档编写  
 > 项目打包配置上传  
 
 ## Bonus的完成情况和解决⽅法
 * bonus5.1更复杂的图⽚处理
-    - 完成情况：暂无
+    - 完成情况：？
     - 解决方法：  
-暂无，利用`helloWorld()`函数...
-代码示例：
-```javascript
-```
+①写死外部容器长宽，图片用cover属性
+（但与响应式布局矛盾，故舍弃）
 
 * bonus5.2 响应式布局
     - 完成情况：√ 
