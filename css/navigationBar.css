@@ -97,3 +97,10 @@
     background-color: cornflowerblue;
     color: white;
 }
+
+.NavigationBar_right.highlight{
+    padding-bottom: 8px;
+    border-bottom: rgba(24, 40, 82, 0.83);
+    border-bottom-width: 5px;
+    border-style: none none solid none;
+}

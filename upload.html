@@ -3,46 +3,133 @@
     <head>
         <meta charset="UTF-8">
         <title>上传页面</title>
+        <base href="http://localhost:63342/pj/browser.html?_ijt=k4biajrc272rl3pqfr098hkss7\">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/navigationBar.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/upload.css">
+
     </head>
     <body>
-        <!--导航栏...-->
-        <!--主要区域-->
-        <div>
-            <!--图片上传...-->
+        <!--导航栏-->
+        <div class="NavigationBar">
+            <!--logo-->
             <div>
-                <img src="" alt="图片未上传">
-                <br>
-                <input type="button" value="上传图片">
+                <a href="home.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
             </div>
 
-            <div>
-                <h4>图⽚标题</h4>
-                <label>
-                    <input type="text">
-                </label>
+            <div class="NavigationBar_left">
+                <ul>
+                    <li>
+                        <a href="home.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="browser.html">浏览页</a>
+                    </li>
+                    <li>
+                        <a href="search.html">搜索⻚</a>
+                    </li>
+                </ul>
+
             </div>
-            <div>
-                <h4>图⽚描述</h4>
-                <label>
-                    <textarea rows="30" cols="100"></textarea>
-                </label>
-            </div>
-            <div>
-                <h4>拍摄国家</h4>
-                <label>
-                    <input type="text">
-                </label>
-            </div>
-            <div>
-                <h4>拍摄城市</h4>
-                <label>
-                    <input type="text">
-                </label>
+
+            <div class="NavigationBar_right dropdown highlight">
+                <span class="dropbtn">个⼈中⼼<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                <div class="dropdown-content">
+                    <a href="upload.html"><i class="fa fa-upload" aria-hidden="true"></i> 上传</a>
+                    <a href="myPhoto.html"><i class="fa fa-picture-o" aria-hidden="true"></i> 我的照⽚</a>
+                    <a href="favor.html"><i class="fa fa-heart" aria-hidden="true"></i> 我的收藏</a>
+                    <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 登⼊</a>
+                </div>
             </div>
 
         </div>
+        <!--主要区域-->
+        <div class="centerpart">
+            <form id="form">
+                <!--图片上传...-->
+                <div class="upload">
+                    <div id="showingImageDiv"class="imagePosition" >
+                        <br><br><br><br><br><br><br>
+                        图片未上传
+                    </div>
+                    <div class="buttonPosition">
+                        <button>上传图片 <i class="fa fa-upload" aria-hidden="true"></i></button>
+                        <input type="file" id="chooseImage" value="null" name="file" accept="image/png,image/jpeg" onchange="renderImg()">
+                    </div>
+                </div>
 
-        <!--页脚...-->
+                <div class="widcover">
+                    <div>
+                        <h4>图⽚标题</h4>
+                        <label>
+                            <input type="text">
+                        </label>
+                     </div>
+                    <div>
+                        <h4>图⽚描述</h4>
+                        <label>
+                            <textarea rows="30"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <h4>拍摄国家</h4>
+                        <label>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div>
+                        <h4>拍摄城市</h4>
+                        <label>
+                            <input type="text">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <input type="button" value="确认提交" onclick="submitupload()">
+                </div>
+
+
+
+            </form>
+        </div>
+
+        <!--页脚-->
+        <footer>
+            <ul>
+                <li>© The App All Rights Reserved 2020 </li>
+                <li>京公网安备17307130333号</li>
+            </ul>
+        </footer>
+
+    <script>
+        function uploadImg(){
+            document.getElementById("chooseImage").click();
+        }
+
+        function renderImg() {
+            var file =  document.getElementById('chooseImage').files[0];
+            var re = new FileReader();
+            re.readAsDataURL(file);
+            re.onload = function(re){
+                var imagediv=document.getElementById("showingImageDiv");
+                imagediv.innerHTML=" <img id=\"showingImage\" src=\""+re.target.result+"\" alt=\"图片未加载成功\">";
+            }
+        }
+
+        function submitupload() {
+             alert('提交完成');
+            window.location.href="myPhoto.html";
+            console.log("done");
+
+        }
+
+    </script>
 
     </body>
 </html>
