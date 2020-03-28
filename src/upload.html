@@ -3,13 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>上传页面</title>
-        <base href="http://localhost:63342/pj/browser.html?_ijt=k4biajrc272rl3pqfr098hkss7\">
-        <link rel="stylesheet" type="text/css" href="css/base.css">
-        <link rel="stylesheet" type="text/css" href="css/navigationBar.css">
-        <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/navigationBar.css">
+        <link rel="stylesheet" type="text/css" href="../css/footer.css">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" type="text/css" href="css/upload.css">
+        <link rel="stylesheet" type="text/css" href="../css/upload.css">
 
     </head>
     <body>
@@ -17,21 +16,21 @@
         <div class="NavigationBar">
             <!--logo-->
             <div>
-                <a href="home.html">
-                    <img src="img/logo.png" alt="logo">
+                <a href="./home.html">
+                    <img src="../img/logo.png" alt="logo">
                 </a>
             </div>
 
             <div class="NavigationBar_left">
                 <ul>
                     <li>
-                        <a href="home.html">首页</a>
+                        <a href="./home.html">首页</a>
                     </li>
                     <li>
-                        <a href="browser.html">浏览页</a>
+                        <a href="./browser.html">浏览页</a>
                     </li>
                     <li>
-                        <a href="search.html">搜索⻚</a>
+                        <a href="./search.html">搜索⻚</a>
                     </li>
                 </ul>
 
@@ -40,10 +39,10 @@
             <div class="NavigationBar_right dropdown highlight">
                 <span class="dropbtn">个⼈中⼼<i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 <div class="dropdown-content">
-                    <a href="upload.html"><i class="fa fa-upload" aria-hidden="true"></i> 上传</a>
-                    <a href="myPhoto.html"><i class="fa fa-picture-o" aria-hidden="true"></i> 我的照⽚</a>
-                    <a href="favor.html"><i class="fa fa-heart" aria-hidden="true"></i> 我的收藏</a>
-                    <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 登⼊</a>
+                    <a href="./upload.html"><i class="fa fa-upload" aria-hidden="true"></i> 上传</a>
+                    <a href="./myPhoto.html"><i class="fa fa-picture-o" aria-hidden="true"></i> 我的照⽚</a>
+                    <a href="./favor.html"><i class="fa fa-heart" aria-hidden="true"></i> 我的收藏</a>
+                    <a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 登⼊</a>
                 </div>
             </div>
 
@@ -124,7 +123,7 @@
 
         function submitupload() {
              alert('提交完成');
-            window.location.href="myPhoto.html";
+            window.location.href="./myPhoto.html";
             console.log("done");
 
         }

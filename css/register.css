@@ -19,7 +19,8 @@ img{
     border-color: rgba(150, 255, 233, 0.86);
 }
 
-input[type="text"],input[type="password"]{
+input[type="text"],input[type="password"],input[type="email"]{
+    margin-bottom: 10px;
     height: 45px;
     border-radius: 15px;
     background-color: rgba(42, 78, 119, 0);
