@@ -8,15 +8,15 @@ web课程pj1
 
 ## Github 地址和 Github Pages 地址
 * Github 地址:<https://github.com/hex-xi/SOFT130002_pj1>
-* Github Pages 地址:。。。
+* Github Pages 地址:<https://hex-xi.github.io/SOFT130002_pj1/>
 
-## 项⽬完成情况（13/16）
+## 项⽬完成情况（15/16）
 > ~~阅读文档~~ √  
-> ~~安装编译器及环境~~  √   
-> ⽹站具体需求（9个页面，html+css） 7/9   
-> Bonus（3个） 3/3   
-> 文档编写  
-> 项目打包配置上传  
+> ~~安装编译器及环境~~ √   
+> ⽹站具体需求（9个页面，html+css） 9/9 √   
+> Bonus（3个） 2/3 √   
+> 文档编写 √  
+> 项目打包配置上传 √  
 
 ## Bonus的完成情况和解决⽅法
 * bonus5.1更复杂的图⽚处理
