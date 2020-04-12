@@ -28,7 +28,7 @@ web课程pj1
 * bonus5.2 响应式布局
     - 完成情况：√ 
     - 解决方法：  
-①用float安排布局  
+①用float及百分比控制尺寸，安排布局  
 ②对于图片，用css中background-size/object-fit中的cover或contain属性
 ```css
 .scale img{
